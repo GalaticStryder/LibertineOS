@@ -1,0 +1,210 @@
+﻿#########################################################
+#   LibertineOS language file
+#
+#   Portuguese by: GalaticStryder (LibertineOS)
+#
+#
+
+text_ok=OK
+text_next=Próximo
+text_back=Voltar
+text_yes=Sim
+text_no=Não
+text_about=Sobre
+text_calibrating=Ferramentas de Calibragem
+text_quit=Sair da Instalação
+text_quit_msg=Tens certeza?
+
+welcome.title=Bem-vindo
+welcome.title2=Informação da ROM
+welcome.text1=Estás prestes a instalar
+welcome.version=Versão
+welcome.device=Dispositivo
+welcome.updated=Utualizada
+welcome.developer=Desenvolvedor
+welcome.next=Pressione Próximo para continuar a instalação
+
+themes.title=Tema do Instalador
+themes.desc=Qual tema tu queres usar?
+themes.g3=Tema G3
+themes.g3.info=Tema com interface branca por @Cloudyfa
+themes.redblack=Tema Redblack
+themes.redblack.info=Tema com interface preta por @Kickoff
+
+language.title=Língua do Instalador
+language.text=Qual língua tu queres usar?
+language.english=English
+language.english.info=Use English
+language.portuguese=Português
+language.portuguese.info=Utilizar o Português
+
+rom.data=!date!
+text_finish=Finalizar
+model.title=Modelo do Telefone
+
+by=por
+
+main.tittle=Selecione Instalar abaixo para começar o processo de instalação
+main.install=Instalar
+main.install.info=Continuar o processo de instalação
+main.sys=Informação
+main.sys.info=Mostrar informação do dispositivo
+changelog.title=Mudanças
+changelog.desc=Ver as últimas mudanças da ROM
+main.exit=Sair
+main.exit.info=Sair do instalador
+
+install_mod.tittle=Instalador de ROM Customizada
+install_mod.tittle2=Selecione as opções fundamentais abaixo
+
+addon.tittle=Copiar e restaurar /system/addon.d
+addon_yes=Sim
+info.addon_yes=Recomendado se vindo de versões prévias
+addon_no=Não
+info.addon_no=Recomendado para instalação limpa
+
+firmware.tittle=Instalar firmware da !id!
+firmware_yes=Sim
+info.firmware_yes=Recomendado se vindo de ROMs antigas
+firmware_no=Não
+info.firmware_no=Recomendado para versões mais novas ou diferentes
+
+passwordfix.tittle=Limpeza da senha da tela de bloqueio
+passwordfix_yes=Sim
+info.passwordfix_yes=Recomendado para uso com MultiROM
+passwordfix_no=Não
+info.passwordfix_no=Recomendado para condições de uso normais
+
+sys.info.wait=Capturando informações do sistema...
+sys.info.title=Informação do Sistema
+sys.info.title2=Informações extraídas da sessão de recuperação
+sys.info.model=Modelo
+sys.info.name=Nome
+sys.info.manu=Construtora
+sys.info.hw=Revisão de hardware
+sys.info.cpu=CPU
+sys.info.lcd=Densidade de LCD
+sys.info.storage=Tamanho da partição
+sys.info.storage.free=Espaço disponível
+
+pre.install.title=Pronto para instalar
+pre.install=O instalador está preparado para começar a instalação
+pre.install2=Pressione <b>Instalar agora</b> para começar a instalação
+pre.install3=Se quiseres revisar ou mudar algum parâmetro da instalação, pressione <b>Voltar</b>
+
+# -- - SYSTEM APPS - -- #
+anthal=ANT HAL
+browser=Navegador Chrome
+bt_midi=Bluetooth MIDI
+calculator=Calculadora
+calendar=Calendário
+desk_clock=Relógio
+email=E-mail
+gallery=Galeria
+home_time=HomeTime
+levideo=Le (App de Vídeo)
+legamecenter=Central LeGame
+panosearch=Pano Search (Buscador)
+lesport=LeSport
+filemanager=Gerenciador de Arquivos
+camera=Câmera
+emojistore=Loja de Emojis
+fanation=Nação de fãs da LeTV
+lemall=LeMall
+lestore=LeStore
+live_wallpaper=Papéis de Parede Animados
+music=Música
+live=LeLive TV
+weather=Tempo
+wallet=Carteira
+notes=Notas
+recorder=Gravador
+manual=Manual do Usuário
+compass=Compasso
+
+info.anthal=HAL auxiliar de esportes, fitness e saúde
+info.browser=Aplicação de navegador Google Chrome
+info.bt_midi=Suporte à bluetooth MIDI
+info.calculator=Aplicação de calculadora
+info.calendar=Aplicação de calendário
+info.desk_clock=Aplicação de relógio e widget
+info.email=Aplicação de e-mail
+info.gallery=Aplicação de galeria (incl. sincronização)
+info.home_time=Aplicação de HomeTime (alguns países)
+info.levideo=Plataforma de vídeos da LeTV (Youtube chinês)
+info.legamecenter=Central para baixar jogos
+info.panosearch=Poderoso buscador da LeTV
+info.lesport=Notícias e jogadas dos esportes
+info.filemanager=Gerenciador de arquivos simples e explorador do LeDrive
+info.camera=Aplicação de câmera
+info.emojistore=Centro para baixar emojis
+info.fanation=Estás de brincadeira?
+info.lemall=Loja online para comprar produtos da LeTV
+info.lestore=Central de download de aplicações
+info.live_wallpaper=Suporte à papéis de parede animados
+info.music=Serviço de música e tocador
+info.live=Conteúdo de streaming da LeTV (botão live)
+info.weather=Aplicação de tempo e widget
+info.wallet=Aplicação de carteira e histórico de transação
+info.notes=Aplicação de notas
+info.recorder=Aplicação de gravador de voz
+info.manual=Como usar seu telefone da LeEco
+info.compass=Aplicação de compasso
+
+mod.tittle=Desejo Flashólico
+mod.tittle2=Modificações customizadas presentes para flashear com a ROM
+mod.tittle3=Escolha as modificações de terceiros que queres
+
+xposed=Instalador do Xposed
+adaway=AdAway
+adb=ADB Persistente
+dns=DNS da Google
+arise=A.R.I.S.E
+40-wifi=Wi-Fi Wideband
+
+info.xposed=Aplicação de instalação do Xposed
+info.adaway=Aplicação de bloqueio de anúncios AdAway
+info.adb=MTP com ADB persistente desde a inicialização
+info.dns=Usar Google DNS 8.8.8.8/8.8.4.4 por padrão
+info.arise=Instalar o sistema de som A.R.I.S.E
+info.40-wifi=40MHz de largura de canal em 2.4GHz
+
+# -- - ROOT - -- #
+none=Nenhum
+supersu=SuperSU
+magisk=MagiskSU
+
+info.none=Sem root por padrão - <#f00>Mods precisam de root!</#>
+info.supersu=Método por @Chainfire - <#f00>LOOPS ONCE</#>
+info.magisk=Método por @topjohnwu - <#f00>BOOT ERROR</#>
+
+# -- - AUDIO - -- #
+v4a_new=Viper4Android 2.5.0.5
+v4a_old=Viper4Android 2.3.4.0
+v4a_profiles=Perfis do V4A
+arkamys=Arkamys™
+icesound=ICEsound™
+sony_player=Tocador da Sony
+rm_deep_buffer=Remoção de deep buffer
+sdcard_perm=Fixar permissiões do sdcard
+
+info.v4a_new=Versão material atualizada do V4A
+info.v4a_old=Uma versão mais antiga do V4A para a velha guarda
+info.v4a_profiles=Muitos perfis de áudio com suporte à IRS
+info.arkamys=O sistema de áudio Arkamys™
+info.icesound=Leia com cuidado as instruções (em inglês)
+info.sony_player=Inclui o TrackID, Network/DLNA e podcasts
+info.rm_deep_buffer=Fixa alguns erros recorrentes, consome mais bateria
+info.sdcard_perm=Poderá adicionar até 5 minutos à sessão de recuperação
+
+# -- - KERNEL - -- #
+# TODO: Add Lambda boot.img here before SuperSU.
+
+# -- - INSTALLER - -- #
+install=Instalando LibertineOS
+install.now=Instalar agora
+install.finish=Leverá algum tempo... Pipoca?
+install.finish.title=A instalação foi completada
+finish.title=Felicitações!
+finish.msg=LibertineOS foi instalada com sucesso
+finish.reboot=Reinicies teu dispositivo agora

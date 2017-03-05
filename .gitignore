@@ -1,0 +1,8 @@
+*.zip
+/rom/
+/temporary/
+/output/
+/download/
+/analyze/
+key.pk8
+certificate.pem

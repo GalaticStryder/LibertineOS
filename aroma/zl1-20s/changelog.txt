@@ -1,0 +1,6 @@
+DEVEL - 03152017
+  * First functional build, most components working except MagiskSU.
+  * Switched aroma theme to @Cloudyfa's 'g3' theme.
+
+DEVEL - 03152017
+  * First personal build, development only.

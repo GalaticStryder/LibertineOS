@@ -1,0 +1,210 @@
+﻿#########################################################
+#   LibertineOS language file
+#
+#   English by: Nevax (FreedomOS)
+#               GalaticStryder (LibertineOS)
+#
+
+text_ok=OK
+text_next=Next
+text_back=Back
+text_yes=Yes
+text_no=No
+text_about=About
+text_calibrating=Calibrating Tools
+text_quit=Quit Installation
+text_quit_msg=Are you sure?
+
+welcome.title=Welcome
+welcome.title2=ROM information
+welcome.text1=You are about to install
+welcome.version=Version
+welcome.device=Device
+welcome.updated=Updated
+welcome.developer=Developer
+welcome.next=Press Next to continue the installation...
+
+themes.title=Installer Theme
+themes.desc=Which theme do you want to use?
+themes.g3=G3 Theme
+themes.g3.info=A white UI theme created by @Cloudyfa
+themes.redblack=Redblack Theme
+themes.redblack.info=A black UI theme created by @Kickoff
+
+language.title=Installer Language
+language.text=Which language do you want to use?
+language.english=English
+language.english.info=Use English
+language.portuguese=Português
+language.portuguese.info=Utilizar o Português
+
+rom.data=!date!
+text_finish=Finish
+model.title=Phone Model
+
+by=by
+
+main.tittle=Select Install below to begin the installation process
+main.install=Install
+main.install.info=Continue the installation process
+main.sys=Information
+main.sys.info=Show device information
+changelog.title=Changelog
+changelog.desc=Look at the latest changes in the ROM
+main.exit=Exit
+main.exit.info=Exit the installer
+
+install_mod.tittle=Custom ROM Installer
+install_mod.tittle2=Select the core installation options below
+
+addon.tittle=Backup and restore /system/addon.d
+addon_yes=Yes
+info.addon_yes=Recommended if coming from previous builds
+addon_no=No
+info.addon_no=Recommended if clean installing
+
+firmware.tittle=Install !id! firmware files
+firmware_yes=Yes
+info.firmware_yes=Recommended if coming from an older ROM
+firmware_no=No
+info.firmware_no=Recommended for newer/different versions
+
+passwordfix.tittle=Lock-screen password workaround
+passwordfix_yes=Yes
+info.passwordfix_yes=Recommended for MultiROM use cases
+passwordfix_no=No
+info.passwordfix_no=Recommended for normal use cases
+
+sys.info.wait=Gathering system information...
+sys.info.title=System Information
+sys.info.title2=Information extracted from recovery session
+sys.info.model=Model
+sys.info.name=Name
+sys.info.manu=Manufacturer
+sys.info.hw=Hardware revision
+sys.info.cpu=CPU
+sys.info.lcd=LCD density
+sys.info.storage=Storage size
+sys.info.storage.free=Storage available
+
+pre.install.title=Ready to install
+pre.install=The wizard is ready to begin the installation
+pre.install2=Press <b>Install now</b> to begin the installation
+pre.install3=If you want to review or change any of your installation settings, press <b>Back</b>
+
+# -- - SYSTEM APPS - -- #
+anthal=ANT HAL
+browser=Chrome Browser
+bt_midi=Bluetooth MIDI
+calculator=Calculator
+calendar=Calendar
+desk_clock=Clock
+email=Email
+gallery=Gallery
+home_time=HomeTime
+levideo=Le (Video App)
+legamecenter=LeGame Center
+panosearch=Pano Search
+lesport=LeSport
+filemanager=File Manager
+camera=Camera
+emojistore=Emoji Store
+fanation=LeTV Fan Nation
+lemall=LeMall
+lestore=LeStore
+live_wallpaper=Live Wallpapers
+music=Music
+live=LeLive TV
+weather=Weather
+wallet=Wallet
+notes=Notes
+recorder=Recorder
+manual=User Guide
+compass=Compass
+
+info.anthal=Sport, fitness and health services HAL
+info.browser=Google Chrome browser application
+info.bt_midi=Bluetooth MIDI support
+info.calculator=Calculator application
+info.calendar=Calendar application
+info.desk_clock=Clock application and widget
+info.email=Email application
+info.gallery=Gallery (incl. syncing) application
+info.home_time=HomeTime application (some countries only)
+info.levideo=LeTV video platform (Youtube-like)
+info.legamecenter=Game download center
+info.panosearch=Powerful LeTV search engine
+info.lesport=Sports newsletter and highlights
+info.filemanager=Simple file manager and LeDrive explorer
+info.camera=Camera application
+info.emojistore=Emoji download center
+info.fanation=Are you kidding me?
+info.lemall=Online store to buy LeTV products
+info.lestore=Application download center
+info.live_wallpaper=Animated wallpaper selection support
+info.music=Music service and player
+info.live=LeTV live streaming content (live button)
+info.weather=Weather application and widget
+info.wallet=Wallet application and transaction history
+info.notes=Notes application
+info.recorder=Voice recorder application
+info.manual=How to use you LeEco phone
+info.compass=Compass application
+
+mod.tittle=Flasholic Desire
+mod.tittle2=Custom built-in modifications to flash with the ROM
+mod.tittle3=Choose the third-party modifications you want
+
+xposed=Xposed installer
+adaway=AdAway
+adb=Persistent ADB
+dns=Google DNS
+arise=A.R.I.S.E
+40-wifi=Wideband Wi-Fi
+
+info.xposed=Xposed installer application
+info.adaway=AdAway ad-blocker application
+info.adb=Persistent MTP with ADB from boot-up
+info.dns=Set Google DNS 8.8.8.8/8.8.4.4 by default
+info.arise=Install the A.R.I.S.E sound system
+info.40-wifi=40MHz channel width over 2.4GHz
+
+# -- - ROOT - -- #
+none=None
+supersu=SuperSU
+magisk=MagiskSU
+
+info.none=Unrooted by default. <#f00>Mods will require root!</#>
+info.supersu=Method by @Chainfire - <#f00>Breaks SafetyNet</#>
+info.magisk=Method by @topjohnwu - <#0f0>Passes SafetyNet</#> <#f00>BOOT ERROR</#>
+
+# -- - AUDIO - -- #
+v4a_new=Viper4Android 2.5.0.5
+v4a_old=Viper4Android 2.3.4.0
+v4a_profiles=V4A Profiles
+arkamys=Arkamys™
+icesound=ICEsound™
+sony_player=Sony Music Player
+rm_deep_buffer=Removal of deep_buffer policy
+sdcard_perm=Fix sdcard permisisons
+
+info.v4a_new=The latest V4A version
+info.v4a_old=An older V4A version for old-school users
+info.v4a_profiles=Various audio profiles with IRS support
+info.arkamys=The Arkamys™ audio system
+info.icesound=Read carefully the included instructions, please
+info.sony_player=Includes TrackID, Network/DLNA and podcasts
+info.rm_deep_buffer=Fixes some sound issues, not battery friendly!
+info.sdcard_perm=May add up to 5 minutes to the recovery session
+
+# -- - KERNEL - -- #
+# TODO: Add Lambda boot.img here before SuperSU.
+
+# -- - INSTALLER - -- #
+install=Installing LibertineOS
+install.now=Install now
+install.finish=It will take a little while... Popcorn?
+install.finish.title=The installation has been completed
+finish.title=Congratulations!
+finish.msg=LibertineOS has been successfully installed
+finish.reboot=Reboot your device now

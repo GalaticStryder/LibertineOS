@@ -1,0 +1,42 @@
+
+
+<b>Summary</b>
+
+<*>You must agree to all of the terms of this agreement to use this software.</*>
+
+<*>If so, you may use the software for free and for any lawful purpose.</*>
+
+<*>This software is provided "as-is" with no warranties, and you agree that the author is not liable for anything you do with it.</*>
+
+<*>You really ought to just go ahead and read the whole agreement. It's not all that long. You should not only rely on this summary.</*>
+
+
+<b>The Agreement</b>
+
+This agreement entitles you to install as many copies of the software as you want, and use the software for any lawful purpose consistent with this agreement. Your license to use the software is expressly conditioned upon your agreement to all of the terms of this agreement. This software is licensed, not sold. The author reserves all other rights not granted by this agreement.
+
+
+<b>The Restrictions</b>
+
+<*>When using the software you must use it in a manner that complies with the applicable laws in the jurisdiction(s) in which you use the software.</*>
+
+<*>You may redistribute the software, but it must include this agreement and you may not repackage or bundle the software with any other software.</*>
+
+<*>The software is digitally signed by the author, redistribution of unsigned packages is expressly forbidden regardless the nature of the package.</*>
+
+<*>You may not remove or alter any proprietary notices or marks on the software.</*>
+
+<*>You may not sell, resell, rent, lease or exchange the software for anything of value.</b>
+
+
+<b>Open-Source Compliance</b>
+
+Certain components of the software may be subject to open-source software licenses, which means any software license approved as open-source licenses by the Open Source Initiative or any substantially similar licenses, including without limitation any license that, as a condition of distribution of the software licensed under such license, requires that the distributor make the software available in source code format. The software documentation includes copies of the licenses applicable to the Open-Source Components.
+
+To the extent there is conflict between the license terms covering the Open-Source Components and this agreement, the terms of such licenses will apply in lieu of the terms of this agreement. To the extent the terms of the licenses applicable to Open-Source Components prohibit any of the restrictions in this agreement with respect to such Open-Source Component, such restrictions will not apply to such Open-Source Component.
+
+
+<b>Disclaimer</b>
+
+THE SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, AND NO WARRANTY, EITHER EXPRESS OR IMPLIED, IS GIVEN. YOUR USE OF THE SOFTWARE IS AT YOUR SOLE RISK. The author does not warrant that (i) the software will meet your specific requirements; (ii) the software is fully compatible with any particular platform; (iii) your use of the software will be uninterrupted, timely, secure, or error-free; (iv) the results that may be obtained from the use of the software will be accurate or reliable; (v) the quality of any products, services, information, or other material purchased or obtained by you through the software will meet your expectations; or (vi) any errors in the software will be corrected.
+
