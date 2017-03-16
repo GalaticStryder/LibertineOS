@@ -6,3 +6,4 @@
 /analyze/
 key.pk8
 certificate.pem
+*.aria2
