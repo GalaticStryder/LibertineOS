@@ -20,14 +20,16 @@ function build_arise {
   remove_list="
   custom/Esira.apk
   modules/dolby
-  smeejaytee
-  am3d
-  v4a_xhifi
+  modules/smeejaytee
+  modules/am3d
+  modules/v4a_xhifi
+  modules/ddplus
   "
 
   echo "Building A.R.I.S.E. flashable file..."
   sed -i '/exit 0/d' ${TEMPORARY_FOLDER}/tools/arise/META-INF/com/google/android/update-binary
   sed -i '/sleep/d' ${TEMPORARY_FOLDER}/tools/arise/META-INF/com/google/android/update-binary
+  sed -i 's/nui_print" >/nui_print" >>/g' ${TEMPORARY_FOLDER}/tools/arise/META-INF/com/google/android/update-binary
 
   for i in $remove_list; do
     rm -rf ${TEMPORARY_FOLDER}/tools/arise/$i
