@@ -99,7 +99,7 @@ function download_rom {
 		if wget --spider ${ROM_LINK} &> /dev/null
 		then
 			if [ $(which aria2c) ]; then
-				aria2c ${ROM_LINK} -d ${DOWNLOAD_FOLDER}
+				aria2c -x 4 ${ROM_LINK} -d ${DOWNLOAD_FOLDER}
 			else
 				cd ${DOWNLOAD_FOLDER}
 				wget ${ROM_LINK} &> /dev/null
