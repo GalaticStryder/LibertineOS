@@ -14,11 +14,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+if [[ -d /tmp/img2sdat ]]
+then
+    rm -rf /tmp/img2sdat
+fi
 cp -rf ../utility/img2sdat /tmp/img2sdat
 chmod u+x /tmp/img2sdat/*
-if [[ $(which python2) ]]; then
+if [[ $(which python2) ]]
+then
     PYTHONPATH="$PYTHONPATH:/tmp/img2sdat" exec python2 /tmp/img2sdat/img2sdat.py "$@"
-elif [[ $(which python) ]]; then
+elif [[ $(which python) ]]
+then
     PYTHONPATH="$PYTHONPATH:/tmp/img2sdat" exec python /tmp/img2sdat/img2sdat.py "$@"
 else
     echo "Unable to find python installation"
