@@ -96,15 +96,18 @@ function download_rom {
 	echo -e ${blue}"Checking ROM..."${restore}
 	if [ ! -f  ${DOWNLOAD_FOLDER}/${ROM_NAME}.zip ]; then
 		echo "File ${ROM_NAME}.zip does not exist. Downloading ..."
-		if curl -Is ${ROM_LINK} | grep "200 OK" &> /dev/null
+		if wget --spider ${ROM_LINK} &> /dev/null
 		then
 			if [ $(which aria2c) ]; then
-				aria2c ${ROM_LINK} -d ${DOWNLOAD_FOLDER}/
+				aria2c ${ROM_LINK} -d ${DOWNLOAD_FOLDER}
 			else
-				curl -o ${DOWNLOAD_FOLDER}/${ROM_NAME}.zip ${ROM_LINK}
+				cd ${DOWNLOAD_FOLDER}
+				wget ${ROM_LINK} &> /dev/null
+				cd - &> /dev/null
 			fi;
 		else
 			echo -e ${red}"The mirror for ${ROM_NAME} is offline! Check your connection."${restore}
+			exit
 		fi;
 	else
 		echo "Checking MD5 of ${ROM_NAME}.zip"
