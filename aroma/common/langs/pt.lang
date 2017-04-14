@@ -121,6 +121,8 @@ notes=Notas
 recorder=Gravador
 manual=Manual do Usuário
 compass=Compasso
+vassist=Assistente de Voz
+bugon=Reportar para LeTV
 
 info.anthal=HAL auxiliar de esportes, fitness e saúde
 info.browser=Aplicação de navegador Google Chrome
@@ -131,7 +133,7 @@ info.desk_clock=Aplicação de relógio e widget
 info.email=Aplicação de e-mail
 info.gallery=Aplicação de galeria (incl. sincronização)
 info.home_time=Aplicação de HomeTime (alguns países)
-info.levideo=Plataforma de vídeos da LeTV (Youtube chinês)
+info.levideo=Plataforma de vídeos da LeTV (linha do tempo do live)
 info.legamecenter=Central para baixar jogos
 info.panosearch=Poderoso buscador da LeTV
 info.lesport=Notícias e jogadas dos esportes
@@ -150,6 +152,8 @@ info.notes=Aplicação de notas
 info.recorder=Aplicação de gravador de voz
 info.manual=Como usar seu telefone da LeEco
 info.compass=Aplicação de compasso
+info.vassist=Aplicação de assistente de voz
+info.bugon=Serviços da LeTV para reportar bugs e estatísticas
 
 mod.tittle=Desejo Flashólico
 mod.tittle2=Modificações customizadas presentes para flashear com a ROM

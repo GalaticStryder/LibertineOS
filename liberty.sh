@@ -142,7 +142,6 @@ function header_info {
 	echo "ROM_NAME=${ROM_NAME}"
 	echo "TARGET_ARCH=${ARCH}"
 	echo "TARGET_PLATFORM=${PLATFORM}"
-	#echo "TARGET_KERNEL=${TARGET_KERNEL}"
 	echo "HOST_ARCH=${HOST_ARCH}"
 	echo "HOST_OS=${HOST_OS}"
 	echo "HOST_OS_EXTRA=${HOST_OS_EXTRA}"

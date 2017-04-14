@@ -36,6 +36,18 @@ calendar_list="
 LeUICalendarImporter
 "
 
+assist_list="
+VoiceAssistant
+VoicePrintService
+"
+
+bug_list="
+BugPostbox
+LetvDebugUtil
+LetvSystemReport
+LetvUsageStatsReporter
+"
+
 # Generate a list file with only the wanted apps
 rm -f /tmp/aroma/sapos.prop
 cp /tmp/aroma/aromasapos.prop /tmp/aroma/sapos.prop
@@ -60,7 +72,7 @@ if [[ $(grep -c "LiveWallpapers" /tmp/aroma/sapos.prop) == "1" ]]; then
   done
 fi
 
-if [[ $(grep -c "Gallery2" /tmp/aroma/sapos.prop) == "1" ]]; then
+if [[ $(grep -c "LetvGallery2" /tmp/aroma/sapos.prop) == "1" ]]; then
   for app in $gallery_list; do
     echo -e $app >> /tmp/aroma/sapos.prop
   done
@@ -74,6 +86,18 @@ fi
 
 if [[ $(grep -c "Calendar" /tmp/aroma/sapos.prop) == "1" ]]; then
   for app in $calendar_list; do
+    echo -e $app >> /tmp/aroma/sapos.prop
+  done
+fi
+
+if [[ $(grep -c "LetvVoiceAssistant" /tmp/aroma/sapos.prop) == "1" ]]; then
+  for app in $assist_list; do
+    echo -e $app >> /tmp/aroma/sapos.prop
+  done
+fi
+
+if [[ $(grep -c "LetvBugServices" /tmp/aroma/sapos.prop) == "1" ]]; then
+  for app in $bug_list; do
     echo -e $app >> /tmp/aroma/sapos.prop
   done
 fi

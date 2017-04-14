@@ -181,7 +181,7 @@ form(
       "Calendar",               "<~calendar>",            "<~info.calendar>",           "check",
       "DeskClock",              "<~desk_clock>",          "<~info.desk_clock>",         "check",
       "Email",                  "<~email>",               "<~info.email>",              "check",
-      "Gallery2",               "<~gallery>",             "<~info.gallery>",            "check",
+      "LetvGallery2",           "<~gallery>",             "<~info.gallery>",            "check",
       "HomeTime",               "<~home_time>",           "<~info.home_time>",          "check",
       "LetvVideoLeading",       "<~levideo>",             "<~info.levideo>",            "check",
       "legamecenter",           "<~legamecenter>",        "<~info.legamecenter>",       "check",
@@ -198,10 +198,12 @@ form(
       "superlive",              "<~live>",                "<~info.live>",               "check",
       "tqtLetv",                "<~weather>",             "<~info.weather>",            "check",
       "LetvWallet",             "<~wallet>",              "<~info.wallet>",             "check",
-      "LetvNote",               "<~notes>",               "<~info.notes>",              "check",
+      "LetvNote2",              "<~notes>",               "<~info.notes>",              "check",
       "LetvRecorder",           "<~recorder>",            "<~info.recorder>",           "check",
       "LetvUserManual",         "<~manual>",              "<~info.manual>",             "check",
-      "LetvCompass",            "<~compass>",             "<~info.compass>",            "check"
+      "LetvCompass",            "<~compass>",             "<~info.compass>",            "check",
+      "LetvVoiceAssistant",     "<~vassist>",             "<~info.vassist>",            "check",
+      "LetvBugServices",        "<~bugon>",               "<~info.bugon>",              "check"
 );
 
 resexec("scripts/gen_list.sh");

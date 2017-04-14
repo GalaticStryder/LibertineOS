@@ -1,3 +1,6 @@
+DEVEL - 04142017
+  * Upgrade to 23S from China official release.
+
 DEVEL - 03152017
   * First functional build, most components working except MagiskSU.
   * Switched aroma theme to @Cloudyfa's 'g3' theme.

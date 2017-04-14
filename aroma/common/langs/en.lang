@@ -121,6 +121,8 @@ notes=Notes
 recorder=Recorder
 manual=User Guide
 compass=Compass
+vassist=Voice Assistant
+bugon=LeTV Reporting
 
 info.anthal=Sport, fitness and health services HAL
 info.browser=Google Chrome browser application
@@ -131,7 +133,7 @@ info.desk_clock=Clock application and widget
 info.email=Email application
 info.gallery=Gallery (incl. syncing) application
 info.home_time=HomeTime application (some countries only)
-info.levideo=LeTV video platform (Youtube-like)
+info.levideo=LeTV video platform (live content timeline)
 info.legamecenter=Game download center
 info.panosearch=Powerful LeTV search engine
 info.lesport=Sports newsletter and highlights
@@ -150,6 +152,8 @@ info.notes=Notes application
 info.recorder=Voice recorder application
 info.manual=How to use you LeEco phone
 info.compass=Compass application
+info.vassist=Voice assistant application
+info.bugon=LeTV bug/stats reporting services
 
 mod.tittle=Flasholic Desire
 mod.tittle2=Custom built-in modifications to flash with the ROM

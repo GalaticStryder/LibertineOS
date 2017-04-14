@@ -21,7 +21,6 @@ function make_zip {
   echo "Making flashable zip file..."
   zip -r9 "${OUTPUT_FILE}.zip" * -x "*EMPTY_DIRECTORY*"
 
-  #cd ${LOS_FOLDER}
   cd -
   echo "Copying unsigned zip file to output folder..."
   mv -v "${TEMPORARY_FOLDER}/${OUTPUT_FILE}.zip" "${OUTPUT_FOLDER}/"
@@ -29,13 +28,22 @@ function make_zip {
   echo "Testing zip file integrity..."
   zip -T ${OUTPUT_FOLDER}/${OUTPUT_FILE}.zip
 
-  echo "Signing the final zip file..."
-  chmod +x ${UTILITY_FOLDER}/signapk.jar
-  java -jar "${UTILITY_FOLDER}/signapk.jar" "${LOS_FOLDER}/certificate.pem" "${LOS_FOLDER}/key.pk8" "${OUTPUT_FOLDER}/${OUTPUT_FILE}.zip" "${OUTPUT_FOLDER}/${OUTPUT_FILE}-signed.zip"
+  echo "Generating md5 hash for unsigned file..."
+  openssl md5 "${OUTPUT_FOLDER}/${OUTPUT_FILE}.zip" | cut -f 2 -d " " > "${OUTPUT_FOLDER}/${OUTPUT_FILE}.zip.md5"
 
-  echo "Generating md5 hash file..."
-  openssl md5 "${OUTPUT_FOLDER}/${OUTPUT_FILE}-signed.zip" | cut -f 2 -d " " > "${OUTPUT_FOLDER}/${OUTPUT_FILE}-signed.zip.md5"
+  echo ""
+  read -n 1 -p "Do you want to sign the output file? (y/n)" signer
+  if [ "$signer" = "y" ] || [ "$signer" = "Y" ]; then
+    echo ""
+    echo "Signing the final zip file..."
+    chmod +x ${UTILITY_FOLDER}/signapk.jar
+    java -jar "${UTILITY_FOLDER}/signapk.jar" "${LOS_FOLDER}/certificate.pem" "${LOS_FOLDER}/key.pk8" "${OUTPUT_FOLDER}/${OUTPUT_FILE}.zip" "${OUTPUT_FOLDER}/${OUTPUT_FILE}-signed.zip"
 
+    echo "Generating md5 hash for signed file..."
+    openssl md5 "${OUTPUT_FOLDER}/${OUTPUT_FILE}-signed.zip" | cut -f 2 -d " " > "${OUTPUT_FOLDER}/${OUTPUT_FILE}-signed.zip.md5"
+  fi;
+
+  echo ""
   echo "Cleaning temporary folder..."
   rm -rvf ${TEMPORARY_FOLDER}/*
 }
