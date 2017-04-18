@@ -182,7 +182,6 @@ form(
       "DeskClock",              "<~desk_clock>",          "<~info.desk_clock>",         "check",
       "Email",                  "<~email>",               "<~info.email>",              "check",
       "LetvGallery2",           "<~gallery>",             "<~info.gallery>",            "check",
-      "HomeTime",               "<~home_time>",           "<~info.home_time>",          "check",
       "LetvVideoLeading",       "<~levideo>",             "<~info.levideo>",            "check",
       "legamecenter",           "<~legamecenter>",        "<~info.legamecenter>",       "check",
       "LeSo",                   "<~panosearch>",          "<~info.panosearch>",         "check",
