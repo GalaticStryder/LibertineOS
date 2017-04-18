@@ -94,7 +94,7 @@ pre.install3=If you want to review or change any of your installation settings, 
 
 # -- - SYSTEM APPS - -- #
 anthal=ANT HAL
-browser=Chrome Browser
+browser=Browser
 bt_midi=Bluetooth MIDI
 calculator=Calculator
 calendar=Calendar
@@ -123,9 +123,11 @@ manual=User Guide
 compass=Compass
 vassist=Voice Assistant
 bugon=LeTV Reporting
+stk=SIM Toolkit
+supermanager=Super Manager
 
 info.anthal=Sport, fitness and health services HAL
-info.browser=Google Chrome browser application
+info.browser=Browser application
 info.bt_midi=Bluetooth MIDI support
 info.calculator=Calculator application
 info.calendar=Calendar application
@@ -154,6 +156,8 @@ info.manual=How to use you LeEco phone
 info.compass=Compass application
 info.vassist=Voice assistant application
 info.bugon=LeTV bug/stats reporting services
+info.stk=Operator tools for SIM management
+info.supermanager=Feature rich device manager
 
 mod.tittle=Flasholic Desire
 mod.tittle2=Custom built-in modifications to flash with the ROM
@@ -179,8 +183,8 @@ supersu=SuperSU
 magisk=MagiskSU
 
 info.none=Unrooted by default. <#f00>Mods will require root!</#>
-info.supersu=Method by @Chainfire - <#f00>Breaks SafetyNet</#>
-info.magisk=Method by @topjohnwu - <#0f0>Passes SafetyNet</#> <#f00>BOOT ERROR</#>
+info.supersu=Method by @Chainfire - <#f00>LOOPS ONCE</#>
+info.magisk=Method by @topjohnwu - <#f00>BOOT ERROR</#>
 
 # -- - AUDIO - -- #
 v4a_new=Viper4Android 2.5.0.5

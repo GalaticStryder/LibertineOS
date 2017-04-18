@@ -170,12 +170,12 @@ form(
     "@default",
     aromasapos.prop,
     "inclorexcl",     "Select whether you want include or exclude filter",        "",                    "group",
-      "1",                    "Include",                  "Choose the apps you WANT installed from the list below",        "select.selected",
-      "0",                    "Exclude",                  "Choose the apps you DON'T WANT installed from the list below",  "select",
+      "1",                    "Include",                  "Choose the apps you WANT installed from the list below",        "select",
+      "0",                    "Exclude",                  "Choose the apps you DON'T WANT installed from the list below",  "select.selected",
 
     "sapos",     "Choose the apps you want to add on the filter list",    "",        "group",
       "AntHalService",          "<~anthal>",              "<~info.anthal>",             "check",
-      "Chrome",                 "<~browser>",             "<~info.browser>",            "check",
+      "Browser",                "<~browser>",             "<~info.browser>",            "check",
       "BluetoothMidiService",   "<~bt_midi>",             "<~info.bt_midi>",            "check",
       "Calculator",             "<~calculator>",          "<~info.calculator>",         "check",
       "Calendar",               "<~calendar>",            "<~info.calendar>",           "check",
@@ -190,7 +190,7 @@ form(
       "LetvFileManager",        "<~filemanager>",         "<~info.filemanager>",        "check",
       "LetvCamera",             "<~camera>",              "<~info.camera>",             "check",
       "LetvEmojiStore",         "<~emojistore>",          "<~info.emojistore>",         "check",
-      "LetvFanNation",          "<~fanation>",            "<~info.fanation>",           "check",
+      "Stk",                    "<~stk>",                 "<~info.stk>",                "check",
       "LetvShop",               "<~lemall>",              "<~info.lemall>",             "check",
       "LetvStore",              "<~lestore>",             "<~info.lestore>",            "check",
       "LiveWallpapers",         "<~live_wallpaper>",      "<~info.live_wallpaper>",     "check",
@@ -203,7 +203,8 @@ form(
       "LetvUserManual",         "<~manual>",              "<~info.manual>",             "check",
       "LetvCompass",            "<~compass>",             "<~info.compass>",            "check",
       "LetvVoiceAssistant",     "<~vassist>",             "<~info.vassist>",            "check",
-      "LetvBugServices",        "<~bugon>",               "<~info.bugon>",              "check"
+      "LetvBugServices",        "<~bugon>",               "<~info.bugon>",              "check",
+      "LetvSuperManager",       "<~supermanager>",        "<~info.supermanager>",       "check"
 );
 
 resexec("scripts/gen_list.sh");
@@ -214,11 +215,11 @@ checkbox(
 
   "<~mod.tittle3>", "", 2,
     "<~xposed>", "<~info.xposed>", 0,
-    "<~adaway>", "<~info.adaway>", 1,
+    "<~adaway>", "<~info.adaway>", 0,
     "<~adb>", "<~info.adb>", 0,
-    "<~dns>", "<~info.dns>", 0,
-    "<~arise>", "<~info.arise>", 1,
-    "<~40-wifi>", "<~info.40-wifi>", 0
+    "<~dns>", "<~info.dns>", 1,
+    "<~arise>", "<~info.arise>", 0,
+    "<~40-wifi>", "<~info.40-wifi>", 1
 );
 
 form(

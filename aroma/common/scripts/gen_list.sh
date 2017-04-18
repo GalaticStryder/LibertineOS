@@ -34,6 +34,7 @@ supersearch
 
 calendar_list="
 LeUICalendarImporter
+GoogleCalendarSyncAdapter
 "
 
 assist_list="

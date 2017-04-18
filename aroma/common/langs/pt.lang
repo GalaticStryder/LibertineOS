@@ -94,7 +94,7 @@ pre.install3=Se quiseres revisar ou mudar algum parâmetro da instalação, pres
 
 # -- - SYSTEM APPS - -- #
 anthal=ANT HAL
-browser=Navegador Chrome
+browser=Navegador
 bt_midi=Bluetooth MIDI
 calculator=Calculadora
 calendar=Calendário
@@ -123,9 +123,11 @@ manual=Manual do Usuário
 compass=Compasso
 vassist=Assistente de Voz
 bugon=Reportar para LeTV
+stk=Kit de Ferramentas do SIM
+supermanager=Super Gerente
 
 info.anthal=HAL auxiliar de esportes, fitness e saúde
-info.browser=Aplicação de navegador Google Chrome
+info.browser=Aplicação de navegador
 info.bt_midi=Suporte à bluetooth MIDI
 info.calculator=Aplicação de calculadora
 info.calendar=Aplicação de calendário
@@ -154,6 +156,8 @@ info.manual=Como usar seu telefone da LeEco
 info.compass=Aplicação de compasso
 info.vassist=Aplicação de assistente de voz
 info.bugon=Serviços da LeTV para reportar bugs e estatísticas
+info.stk=Ferramentas da operadora para gerenciamento do SIM
+info.supermanager=Gerente de dispositivo com muitas funções
 
 mod.tittle=Desejo Flashólico
 mod.tittle2=Modificações customizadas presentes para flashear com a ROM

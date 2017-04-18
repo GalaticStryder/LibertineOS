@@ -65,6 +65,12 @@ function dat_to_dat {
     done
   fi
 
+  # TODO: Convert to a global API handled by *.ini.
+  echo "Modifying build properties..."
+  sudo sed -i "s/ro.build.display.id=.*/ro.build.display.id=${NAME}-${TAG}-${ROM_ID} ${RELTYPE}/" ${TEMPORARY_FOLDER}/mount/build.prop
+  sudo sed -i "s/ro.product.locale=.*/ro.product.locale=en-US/" ${TEMPORARY_FOLDER}/mount/build.prop
+  sudo sed -i "/ro.mtk_default_ime=.*/d" ${TEMPORARY_FOLDER}/mount/build.prop
+
   echo "Building new EXT4 system..."
   sudo ${UTILITY_FOLDER}/make_ext4fs -T 0 -S file_contexts -l ${SYSTEMIMAGE_PARTITION_SIZE} -a system system_new.img mount/
 

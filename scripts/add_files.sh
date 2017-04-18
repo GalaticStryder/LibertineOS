@@ -45,7 +45,7 @@ function add_files {
   sed -i "s:!version!:$TAG:" ${TEMPORARY_FOLDER}/META-INF/com/google/android/aroma-config
 
   echo "Setting device in aroma..."
-  sed -i "s:!device!:${DEVICE}:" ${TEMPORARY_FOLDER}/META-INF/com/google/android/aroma-config
+  sed -i "s:!device!:$DEVICE:" ${TEMPORARY_FOLDER}/META-INF/com/google/android/aroma-config
 
   echo "Setting date in aroma..."
   sed -i "s:!date!:$(date +"%d%m%y"):" ${TEMPORARY_FOLDER}/META-INF/com/google/android/aroma-config
