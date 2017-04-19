@@ -18,12 +18,12 @@
 
 function build_arise {
   remove_list="
-  custom/Esira.apk
-  modules/dolby
-  modules/smeejaytee
-  modules/am3d
-  modules/v4a_xhifi
-  modules/ddplus
+  am3d
+  atmos
+  ddplus
+  dirac
+  smeejaytee
+  v4a_xhifi
   "
 
   echo "Building A.R.I.S.E. flashable file..."
@@ -32,7 +32,7 @@ function build_arise {
   sed -i 's/nui_print" >/nui_print" >>/g' ${TEMPORARY_FOLDER}/tools/arise/META-INF/com/google/android/update-binary
 
   for i in $remove_list; do
-    rm -rf ${TEMPORARY_FOLDER}/tools/arise/META-INF/com/google/android/custom/$i
+    rm -rf ${TEMPORARY_FOLDER}/tools/arise/META-INF/com/google/android/modules/$i
   done
 
   echo "rm -rf /data/data/dk.icesound.icepower" >> ${TEMPORARY_FOLDER}/tools/arise/META-INF/com/google/android/update-binary
