@@ -57,23 +57,29 @@ main.exit.info=Sair do instalador
 install_mod.tittle=Instalador de ROM Customizada
 install_mod.tittle2=Selecione as opções fundamentais abaixo
 
-addon.tittle=Copiar e restaurar /system/addon.d
+addon.tittle=Fazer backup e restaurar /system/addon.d
 addon_yes=Sim
-info.addon_yes=Recomendado se vindo de versões prévias
+info.addon_yes=Salvar quaisquer scripts que podem estar em addon.d
 addon_no=Não
-info.addon_no=Recomendado para instalação limpa
+info.addon_no=Fazer nada com addon.d (recomendado)
 
-firmware.tittle=Instalar firmware da !id!
+firmware.tittle=Instalar arquivos de firmware da !id!
 firmware_yes=Sim
-info.firmware_yes=Recomendado se vindo de ROMs antigas
+info.firmware_yes=Push stock firmware files to their partitions
 firmware_no=Não
-info.firmware_no=Recomendado para versões mais novas ou diferentes
+info.firmware_no=Não tocar no firmware (recomendado)
 
-passwordfix.tittle=Limpeza da senha da tela de bloqueio
+passwordfix.tittle=Limpeza da senha da tela de bloqueio (MultiROM)
 passwordfix_yes=Sim
-info.passwordfix_yes=Recomendado para uso com MultiROM
+info.passwordfix_yes=Apagar dados de credenciais se trancado na tela de bloqueio
 passwordfix_no=Não
-info.passwordfix_no=Recomendado para condições de uso normais
+info.passwordfix_no=Fazer nada com as credenciais (recomendado)
+
+splash.tittle=Usar a logo inicial da !id!
+splash_yes=Sim
+info.splash_yes=Mudar para logo inicial da stock
+splash_no=Não
+info.splash_no=Ficar com a logo inicial atual (recomendado)
 
 sys.info.wait=Capturando informações do sistema...
 sys.info.title=Informação do Sistema
@@ -124,6 +130,7 @@ compass=Compasso
 vassist=Assistente de Voz
 bugon=Reportar para LeTV
 stk=Kit de Ferramentas do SIM
+roaming=Roaming Internacional
 supermanager=Super Gerente
 
 info.anthal=HAL auxiliar de esportes, fitness e saúde
@@ -142,7 +149,7 @@ info.lesport=Notícias e jogadas dos esportes
 info.filemanager=Gerenciador de arquivos simples e explorador do LeDrive
 info.camera=Aplicação de câmera
 info.emojistore=Centro para baixar emojis
-info.fanation=Estás de brincadeira?
+info.fanation=Também conhecido por aplicação do LeEco Circle
 info.lemall=Loja online para comprar produtos da LeTV
 info.lestore=Central de download de aplicações
 info.live_wallpaper=Suporte à papéis de parede animados
@@ -157,6 +164,7 @@ info.compass=Aplicação de compasso
 info.vassist=Aplicação de assistente de voz
 info.bugon=Serviços da LeTV para reportar bugs e estatísticas
 info.stk=Ferramentas da operadora para gerenciamento do SIM
+info.roaming=Serviço operador de roaming da LeTV
 info.supermanager=Gerente de dispositivo com muitas funções
 
 mod.tittle=Desejo Flashólico
@@ -205,8 +213,12 @@ info.sony_player=Inclui o TrackID, Network/DLNA e podcasts
 info.rm_deep_buffer=Fixa alguns erros recorrentes, consome mais bateria
 info.sdcard_perm=Poderá adicionar até 5 minutos à sessão de recuperação
 
-# -- - KERNEL - -- #
-# TODO: Add Lambda boot.img here before SuperSU.
+# -- - GOOGLE APPS - -- #
+plain=Plain Stock
+opengapps=OpenGapps for EUI
+
+info.plain=Just the usual !id! with apps you selected before
+info.opengapps=Auto-flash our modified version of OpenGapps for EUI
 
 # -- - INSTALLER - -- #
 install=Instalando LibertineOS

@@ -59,21 +59,27 @@ install_mod.tittle2=Select the core installation options below
 
 addon.tittle=Backup and restore /system/addon.d
 addon_yes=Yes
-info.addon_yes=Recommended if coming from previous builds
+info.addon_yes=Save any possible scripts in addon.d
 addon_no=No
-info.addon_no=Recommended if clean installing
+info.addon_no=Just do nothing with addon.d (recommended)
 
 firmware.tittle=Install !id! firmware files
 firmware_yes=Yes
-info.firmware_yes=Recommended if coming from an older ROM
+info.firmware_yes=Push stock firmware files to their partitions
 firmware_no=No
-info.firmware_no=Recommended for newer/different versions
+info.firmware_no=Do not touch the firmware (recommended)
 
-passwordfix.tittle=Lock-screen password workaround
+passwordfix.tittle=Lock-screen password workaround (MultiROM)
 passwordfix_yes=Yes
-info.passwordfix_yes=Recommended for MultiROM use cases
+info.passwordfix_yes=Wipe data credentials if you get stuck in lock-screen
 passwordfix_no=No
-info.passwordfix_no=Recommended for normal use cases
+info.passwordfix_no=Just do nothing with the credentials (recommended)
+
+splash.tittle=Use !id! splash logo
+splash_yes=Yes
+info.splash_yes=Switch to the stock splash logo
+splash_no=No
+info.splash_no=Keep the current splash logo (recommended)
 
 sys.info.wait=Gathering system information...
 sys.info.title=System Information
@@ -124,6 +130,7 @@ compass=Compass
 vassist=Voice Assistant
 bugon=LeTV Reporting
 stk=SIM Toolkit
+roaming=International Roaming
 supermanager=Super Manager
 
 info.anthal=Sport, fitness and health services HAL
@@ -142,7 +149,7 @@ info.lesport=Sports newsletter and highlights
 info.filemanager=Simple file manager and LeDrive explorer
 info.camera=Camera application
 info.emojistore=Emoji download center
-info.fanation=Are you kidding me?
+info.fanation=Also know as LeEco Circle application
 info.lemall=Online store to buy LeTV products
 info.lestore=Application download center
 info.live_wallpaper=Animated wallpaper selection support
@@ -157,6 +164,7 @@ info.compass=Compass application
 info.vassist=Voice assistant application
 info.bugon=LeTV bug/stats reporting services
 info.stk=Operator tools for SIM management
+info.roaming=LeTV roaming service handler
 info.supermanager=Feature rich device manager
 
 mod.tittle=Flasholic Desire
@@ -182,7 +190,7 @@ none=None
 supersu=SuperSU
 magisk=MagiskSU
 
-info.none=Unrooted by default. <#f00>Mods will require root!</#>
+info.none=Unrooted by default <#f00>Mods will require root!</#>
 info.supersu=Method by @Chainfire - <#f00>LOOPS ONCE</#>
 info.magisk=Method by @topjohnwu - <#f00>BOOT ERROR</#>
 
@@ -205,8 +213,12 @@ info.sony_player=Includes TrackID, Network/DLNA and podcasts
 info.rm_deep_buffer=Fixes some sound issues, not battery friendly!
 info.sdcard_perm=May add up to 5 minutes to the recovery session
 
-# -- - KERNEL - -- #
-# TODO: Add Lambda boot.img here before SuperSU.
+# -- - GOOGLE APPS - -- #
+plain=Plain Stock
+opengapps=OpenGapps for EUI
+
+info.plain=Just the usual !id! with apps you selected before
+info.opengapps=Auto-flash our modified version of OpenGapps for EUI
 
 # -- - INSTALLER - -- #
 install=Installing LibertineOS

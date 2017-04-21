@@ -156,12 +156,11 @@ selectbox(
     "<~firmware_no>", "<~info.firmware_no>", 1,
   "<~passwordfix.tittle>", "", 2,
     "<~passwordfix_yes>", "<~info.passwordfix_yes>", 0,
-    "<~passwordfix_no>", "<~info.passwordfix_no>", 1
+    "<~passwordfix_no>", "<~info.passwordfix_no>", 1,
+  "<~splash.tittle>", "", 2,
+    "<~splash_yes>", "<~info.splash_yes>", 0,
+    "<~splash_no>", "<~info.splash_no>", 1
 );
-
-# Gapps START
-
-# Gapps END
 
 # -- - SYSTEM APPS - -- #
 form(
@@ -189,7 +188,9 @@ form(
       "LetvFileManager",        "<~filemanager>",         "<~info.filemanager>",        "check",
       "LetvCamera",             "<~camera>",              "<~info.camera>",             "check",
       "LetvEmojiStore",         "<~emojistore>",          "<~info.emojistore>",         "check",
+      "LeEcoCircle",            "<~fanation>",            "<~info.fanation>",           "check",
       "Stk",                    "<~stk>",                 "<~info.stk>",                "check",
+      "LetvRoaming",            "<~roaming>",             "<~info.roaming>",            "check",
       "LetvShop",               "<~lemall>",              "<~info.lemall>",             "check",
       "LetvStore",              "<~lestore>",             "<~info.lestore>",            "check",
       "LiveWallpapers",         "<~live_wallpaper>",      "<~info.live_wallpaper>",     "check",
@@ -221,6 +222,7 @@ checkbox(
     "<~40-wifi>", "<~info.40-wifi>", 1
 );
 
+# -- ROOT -- #
 form(
     "Root?",
     "Choose whether you want root and which root method to use if you want it</#>",
@@ -301,6 +303,26 @@ then
     endif;
 
     resexec("scripts/gen_arise_conf.sh");
+endif;
+
+# -- GOOGLE APPS -- #
+form(
+    "Google Apps?",
+    "Choose whether you want some basic Google apps or just go plain stock</#>",
+    "@default",
+    opengapps.prop,
+    "opengapps",     "Note: Some framework components will be missing if you go plain stock",        "",      "group",
+      "0",                    "<~plain>",                    "<~info.plain>",         "select",
+      "1",                    "<~opengapps>",                "<~info.opengapps>",     "select.selected"
+);
+
+if file_getprop("/tmp/aroma/opengapps.prop","opengapps") == "1" then
+    textbox(
+      "OpenGapps",
+      "Read Me",
+      "info",
+          readfile_aroma("opengapps.txt")
+        );
 endif;
 
 # -- - Pre-Install - -- -#
