@@ -253,6 +253,9 @@ else if [ "$MODE" = "build" ]; then
 	build_arise
 	build_arise4magisk
 
+	source ${SCRIPTS_FOLDER}/build_gapps.sh
+	build_gapps
+
 	source ${SCRIPTS_FOLDER}/make_zip.sh
 	make_zip
 fi;

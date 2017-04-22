@@ -4,3 +4,6 @@
 [submodule "utility/img2sdat"]
 	path = utility/img2sdat
 	url = https://github.com/xpirt/img2sdat.git
+[submodule "assets/tools/common/opengapps"]
+	path = assets/tools/common/opengapps
+	url = https://github.com/GalaticStryder/LibertineGapps.git

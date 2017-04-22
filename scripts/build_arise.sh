@@ -17,7 +17,6 @@
 # Contributors :
 
 function build_arise {
-
   remove_list="
   custom/Esira.apk
   modules/dolby
