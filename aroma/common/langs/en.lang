@@ -218,7 +218,7 @@ plain=Plain Stock
 opengapps=OpenGapps for EUI
 
 info.plain=Just the usual !id! with apps you selected before
-info.opengapps=Auto-flash our modified version of OpenGapps for EUI
+info.opengapps=Auto-flash a modified version of OpenGapps
 
 # -- - INSTALLER - -- #
 install=Installing LibertineOS

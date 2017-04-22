@@ -217,8 +217,8 @@ info.sdcard_perm=Poderá adicionar até 5 minutos à sessão de recuperação
 plain=Plain Stock
 opengapps=OpenGapps for EUI
 
-info.plain=Just the usual !id! with apps you selected before
-info.opengapps=Auto-flash our modified version of OpenGapps for EUI
+info.plain=Apenas os aplicativos usuais da !id! selecionados previamente
+info.opengapps=Flashear automaticamente uma versão modificada do OpenGapps
 
 # -- - INSTALLER - -- #
 install=Instalando LibertineOS

@@ -308,18 +308,18 @@ endif;
 # -- GOOGLE APPS -- #
 form(
     "Google Apps?",
-    "Choose whether you want some basic Google apps or just go plain stock</#>",
+    "Choose whether you want Google apps or just go plain stock</#>",
     "@default",
     opengapps.prop,
     "opengapps",     "Note: Some framework components will be missing if you go plain stock",        "",      "group",
-      "0",                    "<~plain>",                    "<~info.plain>",         "select",
-      "1",                    "<~opengapps>",                "<~info.opengapps>",     "select.selected"
+      "0",                    "<~plain>",                    "<~info.plain>",         "select.selected",
+      "1",                    "<~opengapps>",                "<~info.opengapps>",     "select"
 );
 
 if file_getprop("/tmp/aroma/opengapps.prop","opengapps") == "1" then
     textbox(
       "OpenGapps",
-      "Read Me",
+      "Guide to install Google apps on EUI",
       "info",
           readfile_aroma("opengapps.txt")
         );

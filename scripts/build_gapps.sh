@@ -42,5 +42,7 @@ function build_gapps {
   mv opengapps.zip ${TEMPORARY_FOLDER}/tools/
   cd -
   rm -rvf ${TEMPORARY_FOLDER}/tools/opengapps/*
+  rm -vf ${TEMPORARY_FOLDER}/tools/opengapps/.git
+  rm -vf ${TEMPORARY_FOLDER}/tools/opengapps/.gitattributes
   mv ${TEMPORARY_FOLDER}/tools/opengapps.zip ${TEMPORARY_FOLDER}/tools/opengapps/
 }
