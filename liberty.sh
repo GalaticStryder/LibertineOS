@@ -89,7 +89,7 @@ function def_devar {
 	source ${CONFIG_FOLDER}/${CONFIG}.ini
 	IDENTIFIER="${CODENAME}-${ROM_ID}"
 	DAROMA_FOLDER="${AROMA_FOLDER}/${IDENTIFIER}"
-	OUTPUT_FILE="${NAME}-${IDENTIFIER}-${TAG}-${BUILD_DATE}"
+	OUTPUT_FILE="${NAME}-${DEVICE}-${BIG_ID}-${TAG}-${BUILD_DATE}"
 }
 
 function download_rom {
@@ -137,7 +137,7 @@ function header_info {
 	echo "============================================"
 	echo "TARGET_DEVICE=${DEVICE}"
 	echo "CODENAME=${CODENAME}"
-	echo "ROM_ID=${ROM_ID}"
+	echo "ROM_ID=${BIG_ID}" # Display the uppercase one.
 	echo "ASSERT=${ASSERT}"
 	echo "ROM_NAME=${ROM_NAME}"
 	echo "TARGET_ARCH=${ARCH}"
@@ -253,8 +253,9 @@ else if [ "$MODE" = "build" ]; then
 	build_arise
 	build_arise4magisk
 
-	source ${SCRIPTS_FOLDER}/build_gapps.sh
-	build_gapps
+	# DEPRECATED: We'll switch to an AROMA gapps from OpenGapps instead.
+	#source ${SCRIPTS_FOLDER}/build_gapps.sh
+	#build_gapps
 
 	source ${SCRIPTS_FOLDER}/make_zip.sh
 	make_zip

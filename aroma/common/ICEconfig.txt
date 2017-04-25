@@ -11,9 +11,9 @@
 
 <b>Configurations</b>
 
-<*>   ICEconfig 1 is the default configuration.</*>
+<*>ICEconfig 1 is the default configuration.</*>
 
-<*>   ICEconfigs 2, 3, 4, 5 and 6 are alternative configurations using different settings to hopefully provide at least one satisfactory configuration.</*>
+<*>ICEconfigs 2, 3, 4, 5 and 6 are alternative configurations using different settings to hopefully provide at least one satisfactory configuration.</*>
 
-<*>   ICEconfig 0 is yet another alternative: using no ICEsound configuration file at all.</*>
+<*>ICEconfig 0 is yet another alternative: using no ICEsound configuration file at all.</*>
 

@@ -54,11 +54,11 @@ function add_files {
   sed -i "s:!date!:$(date +"%d%m%y"):" ${TEMPORARY_FOLDER}/META-INF/com/google/android/aroma/langs/en.lang
 
   echo "Setting firmware ID in en.lang..."
-  sed -i "s:!id!:$ROM_ID:" ${TEMPORARY_FOLDER}/META-INF/com/google/android/aroma/langs/en.lang
+  sed -i "s:!id!:$BIG_ID:" ${TEMPORARY_FOLDER}/META-INF/com/google/android/aroma/langs/en.lang
 
   echo "Setting date in pt.lang..."
   sed -i "s:!date!:$(date +"%d%m%y"):" ${TEMPORARY_FOLDER}/META-INF/com/google/android/aroma/langs/pt.lang
 
   echo "Setting firmware ID in pt.lang..."
-  sed -i "s:!id!:$ROM_ID:" ${TEMPORARY_FOLDER}/META-INF/com/google/android/aroma/langs/pt.lang
+  sed -i "s:!id!:$BIG_ID:" ${TEMPORARY_FOLDER}/META-INF/com/google/android/aroma/langs/pt.lang
 }

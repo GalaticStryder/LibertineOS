@@ -305,25 +305,12 @@ then
     resexec("scripts/gen_arise_conf.sh");
 endif;
 
-# -- GOOGLE APPS -- #
-form(
-    "Google Apps?",
-    "Choose whether you want Google apps or just go plain stock</#>",
-    "@default",
-    opengapps.prop,
-    "opengapps",     "Note: Some framework components will be missing if you go plain stock",        "",      "group",
-      "0",                    "<~plain>",                    "<~info.plain>",         "select.selected",
-      "1",                    "<~opengapps>",                "<~info.opengapps>",     "select"
+textbox(
+  "Lappys",
+  "Google apps for LibertineOS",
+  "info",
+  readfile_aroma("lappys.txt")
 );
-
-if file_getprop("/tmp/aroma/opengapps.prop","opengapps") == "1" then
-    textbox(
-      "OpenGapps",
-      "Guide to install Google apps on EUI",
-      "info",
-          readfile_aroma("opengapps.txt")
-        );
-endif;
 
 # -- - Pre-Install - -- -#
 ini_set("text_next", "<~install.now>");

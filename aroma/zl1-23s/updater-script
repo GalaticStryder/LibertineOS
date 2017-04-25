@@ -277,29 +277,8 @@ ui_print(" ");
 run_program("/tmp/tools/apps_remover.sh", "sapos.prop", "1");
 
 # -- - GOOGLE APPS - -- #
-if (file_getprop("/tmp/aroma/opengapps.prop", "opengapps") == "0")
-  then
-  ui_print("Shipping the ROM without Google apps...");
-endif;
-
-if (file_getprop("/tmp/aroma/opengapps.prop", "opengapps") == "1")
-  then
-  set_progress(0.960000);
-  ui_print(" ");
-  ui_print("@Installing EUI patched Google apps...");
-  ui_print(" ");
-  run_program("/tmp/tools/busybox", "mkdir", "/tmp/opengapps");
-  run_program("/tmp/tools/busybox", "unzip", "/tmp/tools/opengapps/opengapps.zip", "META-INF/com/google/android/*", "-d", "/tmp/opengapps");
-  package_extract_dir("tools/opengapps", "/tmp/opengapps");
-  set_metadata("/tmp/opengapps/META-INF/com/google/android/update-binary", "uid", 0, "gid", 0, "mode", 0777);
-  set_metadata_recursive("/tmp/opengapps", "uid", 0, "gid", 0, "dmode", 0777, "fmode", 0777);
-  run_program("/sbin/busybox", "sh", "/tmp/opengapps/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/opengapps/opengapps.zip");
-  run_program("/tmp/tools/busybox", "mount", "/system");
-endif;
-
-delete_recursive("/tmp/opengapps");
-delete_recursive("/tmp/tools/opengapps");
-
+set_progress(0.960000);
+ui_print("Shipping the ROM without Google apps...");
 
 # -- - FINISH - -- #
 set_progress(0.990000);

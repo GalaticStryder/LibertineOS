@@ -67,7 +67,7 @@ function dat_to_dat {
 
   # TODO: Convert to a global API handled by *.ini.
   echo "Modifying build properties..."
-  sudo sed -i "s/ro.build.display.id=.*/ro.build.display.id=${NAME}-${TAG}-${ROM_ID} ${RELTYPE}/" ${TEMPORARY_FOLDER}/mount/build.prop
+  sudo sed -i "s/ro.build.display.id=.*/ro.build.display.id=${NAME}-${BIG_ID}-${TAG} ${RELTYPE}/" ${TEMPORARY_FOLDER}/mount/build.prop
   sudo sed -i "s/ro.product.locale=.*/ro.product.locale=en-US/" ${TEMPORARY_FOLDER}/mount/build.prop
   sudo sed -i "/ro.mtk_default_ime=.*/d" ${TEMPORARY_FOLDER}/mount/build.prop
 

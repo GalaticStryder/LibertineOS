@@ -1,0 +1,53 @@
+
+
+Installing Google core apps and services on stock EUI wasn't just working properly so I decided to patch the ROM to use my own modified version of OpenGapps, which is called "Lappys" - I know it's very weird but the name is just conventional in order to avoid users getting into confusion and installing the official ones from the OpenGapps team, which do not work on LibertineOS.
+
+Lappys has two flavors: "vanilla" and "neapolitan", the first one is based on the "nano" package and the second one on the "aroma" package - from OpenGapps of course.
+
+<*>Download the version you want and push it to the phone.</*>
+
+<*>Install LibertineOS as you're doing right now and boot it WITHOUT flashing our Lappys.</*>
+
+<*>Set the phone up in the Wizard and reboot back to recovery after you're in the Launcher. HINT: Reboot pressing volume +.</*>
+
+<*>JUST THEN you'll flash our Lappys after all.</*>
+
+<*>Reboot to system, wiping is dalvik optional.</*>
+
+This is needed due to the lack of interactive "dex2oat" on boot, which doesn't optimize the classes on first run if you install Lappys right after the ROM. I'm not sure if I can fix that for the time being but it's not a big deal, it's even faster that way.
+
+
+<b>Vanilla</b>
+
+Only the core of OpenGapps, usually ~170MB. This package includes:
+
+<*>GMSCore - Fundamental core of Google apps.</*>
+
+<*>Google Service Framework and the login fundamental component.</*>
+
+<*>Widewine, media and maps framework.</*>
+
+<*>Sync services for calendar and contacts.</*>
+
+<*>PlayStore - To download your apps from the market.</*>
+
+<*>Search - Google search engine and all its features.</*>
+
+<*>GoogleTTS - Substitutes the old PicoTTS with a new voice synthesizer.</*>
+
+<*>Hotwork Enrollment - "Ok Google" hotword detection support anywhere.</*>
+
+<*>Gboard - The latest keyboard from Google with glide support.</*>
+
+
+<b>Neapolitan</b>
+
+Delusion... Work in progress.
+
+
+<b>Disclaimer</b>
+
+<*>This version of OpenGapps is not official, do not report bugs to the official team or anywhere else.</*>
+
+<*>Those apps were patched to be compatible with EUI, it doesn't mean they'll work 100%.</*>
+
