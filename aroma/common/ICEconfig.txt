@@ -9,7 +9,7 @@
 <*>This is a way to experiment different configurations if ICEsound is breaking other signal processing services, like ViPER4Arise for example.</*>
 
 
-<b>Configurations</b>
+<b>Configuration</b>
 
 <*>ICEconfig 1 is the default configuration.</*>
 

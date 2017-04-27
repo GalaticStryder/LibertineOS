@@ -1,8 +1,13 @@
 
 
-Installing Google core apps and services on stock EUI wasn't just working properly so I decided to patch the ROM to use my own modified version of OpenGapps, which is called "Lappys" - I know it's very weird but the name is just conventional in order to avoid users getting into confusion and installing the official ones from the OpenGapps team, which do not work on LibertineOS.
+<b>About</b>
 
-Lappys has two flavors: "vanilla" and "neapolitan", the first one is based on the "nano" package and the second one on the "aroma" package - from OpenGapps of course.
+Installing Google core apps and services on stock EUI wasn't just working properly so I decided to patch the ROM to use my own modified version of OpenGapps, which is called <b>"Lappys"</b>.
+
+Lappys currently has two flavors: <b>"vanilla"</b> and <b>"neapolitan"</b>, the first one is based off the "nano" package and the second one on the "aroma" package - from OpenGapps.
+
+
+<b>Installation</b>
 
 <*>Download the version you want and push it to the phone.</*>
 
@@ -10,11 +15,9 @@ Lappys has two flavors: "vanilla" and "neapolitan", the first one is based on th
 
 <*>Set the phone up in the Wizard and reboot back to recovery after you're in the Launcher. HINT: Reboot pressing volume +.</*>
 
-<*>JUST THEN you'll flash our Lappys after all.</*>
+<*>JUST THEN you'll flash the Lappys zip file after all.</*>
 
-<*>Reboot to system, wiping is dalvik optional.</*>
-
-This is needed due to the lack of interactive "dex2oat" on boot, which doesn't optimize the classes on first run if you install Lappys right after the ROM. I'm not sure if I can fix that for the time being but it's not a big deal, it's even faster that way.
+<*>Reboot to system, wiping dalvik is optional.</*>
 
 
 <b>Vanilla</b>
