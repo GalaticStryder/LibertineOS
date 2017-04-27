@@ -11,25 +11,26 @@ It's fundamental, though, to say that this build system only supports the **GNU/
 
 ## Documentation
 
-#### Organization
+This documentation is used for "compiling" supported devices and porting new devices by creating new configuration files for them under **configuration** folder. The **configuration file** is the main component needed for creating a new _LibertineOS_ product, understanding the variables and how the scripts work is the only obstable you might find yourself in when porting LibertineOS your device. Fortunately, we have a great documentation in place, _just for you_.
 
-The _carnival_ happens at first glance in the _configuration_ folder, which consists in several variables that will get passed to the build scripts.
+#### Variables
 
-##### Variables:
-
-The configuration folder sets up the variables for the device we'll build for and the target EUI version, e.g.: _Pro3-23S.ini_.
-
-The fundamental variable is **$IDENTIFIER** which is automatically created by agglutinating two other variables **$CODENAME** and **$ROM_ID**.
-
-**$CODENAME** varible is the short term for the device set by the manufacturer most of the time, e.g.: _x2_, _zl1_. This provices us an easy way to filter what we can ship for different devices.
+They are all set in the configuration for the device and EUI version we'll be building. Check the following table to have a deeper knowledge on the main variables the build system supports.
 
 | Variable      | Description           | Example       |
 | ------------- | --------------------- | ------------- |
 | **$IDENTIFIER** | Automatically created by agglutinating two other variables **$CODENAME** and **$ROM_ID** | **zl1_23s** |
+| **$DEVICE** | User's globally adopted device name convention | **Pro3** |
 | **$CODENAME** | Short term for the device set by the manufacturer | **zl1** |
 | **$ROM_ID** | Lowercase EUI minor release version | 5.9.**23s** |
+| **$ROM_NAME** | Zip file produced by the OEM build system | **LE_ZL1_LEX720-CN-FN-WAXCNFN5902303282S-5.9.023S** |
+| **$ROM_LINK** | Downloadable zip file from OEM servers | **[URL](https://bbs.le.com/zt/eui/index.html)/$ROM_NAME** |
+| **$ROM_MD5** | Hash for checking if the download is not corrupted | **0006f6ca49090764695186b36bc1acfe** |
+| **$ASSERT** | Build product and device safety check before flashing process | **le_zl1** |
+| **$RELTYPE** | Release type to complement the build ID property | **release-keys** |
+| **$SYSTEMIMAGE_PARTITION_SIZE** | Amount of system partition's blocks **[???](#blocks)** | **4294967296** |
 
-##### Logic:
+#### Modes
 
 Inspecting the _configuration_ folder will give you the "officialy" supported devices and their respective EUI versions, a device can have multiple versions and variants that may change how we will handle the installer and the software that we'll remove from the _system.img_.
 
@@ -57,6 +58,14 @@ First of all, make sure you have the needed [dependencies](#dependencies).
 Then, clone the repository somewhere, _--recursive_ flag will pull the needed modules.
 
 	git clone --recursive https://github.com/GalaticStryder/LibertineOS.git libertine-os
+
+Change directory to the folder _libertine-os_ folder.
+
+	cd libertine-os
+
+Run the _[liberty.sh](liberty.sh)_ script in build mode, indicated by _-b_ flag with the **configuration file** right after.
+
+	./liberty.sh -b Pro3-23S
 
 #### Credits
 
