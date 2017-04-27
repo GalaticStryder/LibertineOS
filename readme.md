@@ -17,30 +17,51 @@ The _carnival_ happens at first glance in the _configuration_ folder, which cons
 
 ##### Variables:
 
-The configuration folder sets up the variables for the device we'll build for and the target EUI version.
-
-- configuration/
-  - ${device}-${version}.ini
+The configuration folder sets up the variables for the device we'll build for and the target EUI version, e.g.: _Pro3-23S.ini_.
 
 The fundamental variable is **$IDENTIFIER** which is automatically created by agglutinating two other variables **$CODENAME** and **$ROM_ID**.
 
-The **$CODENAME** varible is the shot term for the device set by the manufacturer most of the time, e.g.: _x2_, _zl1_. This provices us an easy way to filter what we can ship for different devices and EUI versions, e.g.: _21s has Google services support, 20s does not_.
+**$CODENAME** varible is the short term for the device set by the manufacturer most of the time, e.g.: _x2_, _zl1_. This provices us an easy way to filter what we can ship for different devices.
+
+| Variable      | Description           | Example       |
+| ------------- | --------------------- | ------------- |
+| **$IDENTIFIER** | Automatically created by agglutinating two other variables **$CODENAME** and **$ROM_ID** | **zl1_23s** |
+| **$CODENAME** | Short term for the device set by the manufacturer | **zl1** |
+| **$ROM_ID** | Lowercase EUI minor release version | 5.9.**23s** |
 
 ##### Logic:
 
 Inspecting the _configuration_ folder will give you the "officialy" supported devices and their respective EUI versions, a device can have multiple versions and variants that may change how we will handle the installer and the software that we'll remove from the _system.img_.
 
-    ./liberty.sh -a ${device}-${version} # Download, extract and analyze the system.img file.
-    ./liberty.sh -b ${device}-${version} # Download, extract, remove and modify the contents of system.img file to create a flashable zip file.
+	./liberty.sh -a ${device}-${version} # Download, extract and analyze the system.img file.
+	./liberty.sh -b ${device}-${version} # Download, extract, remove and modify the contents of system.img file to create a flashable zip file.
+
+#### Dependencies
+
+The following packages need to be installed on your **GNU/Linux** machine in order to "compile" _LibertineOS_ properly.
+
+###### Arch Linux
+
+	sudo pacman -S aria2 cpio zip wget rsync python python2 python-virtualenv openssl ncurses
+
+###### Ubuntu/Debian
+
+	sudo apt-get install aria2 cpio zip wget rsync python python-virtualenv openssl libncurses-dev
+
+It's also handy to have other software available such as **adb**, **apktool** and **java** installed.
 
 #### Building
 
-Guide will be placed here.
+First of all, make sure you have the needed [dependencies](#dependencies).
+
+Then, clone the repository somewhere, _--recursive_ flag will pull the needed modules.
+
+	git clone --recursive https://github.com/GalaticStryder/LibertineOS.git libertine-os
 
 #### Credits
 
 - [**xpirt**](https://github.com/xpirt): System convertion binaries.
-- [**Nevax**](https://github.com/Nevax07): Most build scripts and organization idea.
+- [**Nevax07**](https://github.com/Nevax07): Most build scripts and organization idea.
 - [**amarullz**](https://github.com/amarullz): Customizable aroma installer.
 - [**Chainfire**](https://github.com/Chainfire): SuperSU modification package.
 - [**Cloudyfa**](https://github.com/Cloudyfa): G3 aroma theme.
