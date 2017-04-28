@@ -172,11 +172,12 @@ mod.tittle2=Modificações customizadas presentes para flashear com a ROM
 mod.tittle3=Escolha as modificações de terceiros que queres
 
 xposed=Instalador do Xposed
-adaway=AdAway
+adaway=Aplicatico AdAway
 adb=ADB Persistente
 dns=DNS da Google
 arise=A.R.I.S.E
 40-wifi=Wi-Fi Wideband
+aptx=Suporte ao aptX da Qualcomm
 
 info.xposed=Aplicação de instalação do Xposed
 info.adaway=Aplicação de bloqueio de anúncios AdAway
@@ -184,6 +185,7 @@ info.adb=MTP com ADB persistente desde a inicialização
 info.dns=Usar Google DNS 8.8.8.8/8.8.4.4 por padrão
 info.arise=Instalar o sistema de som A.R.I.S.E
 info.40-wifi=40MHz de largura de canal em 2.4GHz
+info.aptx=Codec de áudio bluetooth (24-bit) em alta definição
 
 # -- - ROOT - -- #
 none=Nenhum

@@ -269,6 +269,18 @@ if (file_getprop("/tmp/aroma/mod.prop", "item.1.6") == "1")
   run_program("/tmp/tools/wideband_wifi.sh");
 endif;
 
+# -- - APTX - -- #
+if (file_getprop("/tmp/aroma/mod.prop", "item.1.7") == "1")
+  then
+  ui_print("Adding APTX/APTXHD support...");
+endif;
+
+if (file_getprop("/tmp/aroma/mod.prop", "item.1.7") == "0")
+  then
+  ui_print("Removing APTX/APTXHD support...");
+  run_program("/tmp/tools/aptx/remove.sh");
+endif;
+
 # -- - SYSTEM APPS - -- #
 set_progress(0.940000);
 ui_print(" ");

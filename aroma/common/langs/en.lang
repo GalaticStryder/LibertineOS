@@ -171,12 +171,13 @@ mod.tittle=Flasholic Desire
 mod.tittle2=Custom built-in modifications to flash with the ROM
 mod.tittle3=Choose the third-party modifications you want
 
-xposed=Xposed installer
-adaway=AdAway
+xposed=Xposed Installer
+adaway=AdAway Application
 adb=Persistent ADB
 dns=Google DNS
 arise=A.R.I.S.E
 40-wifi=Wideband Wi-Fi
+aptx=Qualcomm's aptX Support
 
 info.xposed=Xposed installer application
 info.adaway=AdAway ad-blocker application
@@ -184,6 +185,7 @@ info.adb=Persistent MTP with ADB from boot-up
 info.dns=Set Google DNS 8.8.8.8/8.8.4.4 by default
 info.arise=Install the A.R.I.S.E sound system
 info.40-wifi=40MHz channel width over 2.4GHz
+info.aptx=Hih definition bluetooth (24-bit) audio codec
 
 # -- - ROOT - -- #
 none=None

@@ -219,7 +219,8 @@ checkbox(
     "<~adb>", "<~info.adb>", 0,
     "<~dns>", "<~info.dns>", 1,
     "<~arise>", "<~info.arise>", 0,
-    "<~40-wifi>", "<~info.40-wifi>", 1
+    "<~40-wifi>", "<~info.40-wifi>", 1,
+    "<~aptx>", "<~info.aptx>", 1
 );
 
 # -- ROOT -- #
