@@ -110,15 +110,17 @@ function download_rom {
 			exit
 		fi;
 	else
-		echo "Checking MD5 of ${ROM_NAME}.zip"
-		if [[ ${ROM_MD5} == $(md5sum ${DOWNLOAD_FOLDER}/${ROM_NAME}.zip | cut -d ' ' -f 1) ]]; then
-			echo "Checked MD5 of ${ROM_NAME}.zip."
-			echo -e ${green}"Checksums OK."${restore}
-		else
-			echo "File ${ROM_NAME}.zip is corrupted, restarting download..."
-			rm -rvf ${DOWNLOAD_FOLDER}/${ROM_NAME}.zip.bak
-			mv -vf ${DOWNLOAD_FOLDER}/${ROM_NAME}.zip ${DOWNLOAD_FOLDER}/${ROM_NAME}.zip.bak
-			download_rom
+		if [[ ! -z ${ROM_MD5} ]]; then
+			echo "Checking MD5 of ${ROM_NAME}.zip"
+			if [[ ${ROM_MD5} == $(md5sum ${DOWNLOAD_FOLDER}/${ROM_NAME}.zip | cut -d ' ' -f 1) ]]; then
+				echo "Checked MD5 of ${ROM_NAME}.zip."
+				echo -e ${green}"Checksums OK."${restore}
+			else
+				echo "File ${ROM_NAME}.zip is corrupted, restarting download..."
+				rm -rvf ${DOWNLOAD_FOLDER}/${ROM_NAME}.zip.bak
+				mv -vf ${DOWNLOAD_FOLDER}/${ROM_NAME}.zip ${DOWNLOAD_FOLDER}/${ROM_NAME}.zip.bak
+				download_rom
+			fi;
 		fi;
 	fi;
 }
