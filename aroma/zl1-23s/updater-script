@@ -183,8 +183,9 @@ if (file_getprop("/tmp/aroma/aromaroot.prop", "rootmethod") == "2")
   ui_print("Installing magisk framework...");
   run_program("/tmp/tools/magisk/install.sh");
   ifelse(is_mounted("/system"), run_program("/tmp/tools/busybox", "umount", "/system"));
-  run_program("/tmp/tools/busybox", "mv", "/tmp/tools/magisk", "/tmp/magisk");
-  run_program("/tmp/magisk/META-INF/com/google/android/update-binary", "dummy", "../../../tmp/los_logs/magisk.log", "/tmp/magisk/magisk.zip");
+  run_program("/tmp/tools/busybox", "mkdir", "-p", "/dev/tmp");
+  run_program("/tmp/tools/busybox", "mv", "/tmp/tools/magisk", "/dev/tmp/magisk");
+  run_program("/dev/tmp/magisk/META-INF/com/google/android/update-binary", "dummy", "../../../tmp/los_logs/magisk.log", "/tmp/magisk/magisk.zip");
   run_program("/tmp/tools/busybox", "mount", "/system");
 
   if (file_getprop("/tmp/aroma/mod.prop", "item.1.5") == "1")
